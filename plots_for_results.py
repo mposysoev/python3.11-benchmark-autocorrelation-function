@@ -47,60 +47,60 @@ file_100000 = np.array(
 #         "steelblue",
 #     ],
 # )
-python_ver = ['Py 3.10', 'Py 3.11']
-colors = ["teal","teal"]
+python_ver = ["Py 3.10", "Py 3.11"]
+colors = ["teal", "teal"]
 
-f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize = (9,7))
-bars1 = ax1.bar(python_ver, file_1000[0:2]/file_1000[0], color=colors)
+f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize=(9, 7))
+bars1 = ax1.bar(python_ver, file_1000[0:2] / file_1000[0], color=colors)
 ax1.bar_label(bars1)
 ax1.set_title("File 1000", fontsize=15)
-bars2 = ax2.bar(python_ver, file_10000[0:2]/file_10000[0], color=colors)
+bars2 = ax2.bar(python_ver, file_10000[0:2] / file_10000[0], color=colors)
 ax2.bar_label(bars2)
 ax2.set_title("File 10000", fontsize=15)
-bars3 = ax3.bar(python_ver, file_100000[0:2]/file_100000[0], color=colors)
+bars3 = ax3.bar(python_ver, file_100000[0:2] / file_100000[0], color=colors)
 ax3.bar_label(bars3)
 ax3.set_title("File 100000", fontsize=15)
 
-f.suptitle("Mac OS", fontsize=20, fontweight='bold')
+f.suptitle("Mac OS", fontsize=20, fontweight="bold")
 
 
-plt.savefig('macos.png')
-#plt.show()
+plt.savefig("macos.png")
+# plt.show()
 
 
-colors = ["steelblue","steelblue"]
+colors = ["steelblue", "steelblue"]
 
-f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize = (9,7))
-bars1 = ax1.bar(python_ver, file_1000[2:4]/file_1000[2], color=colors)
+f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize=(9, 7))
+bars1 = ax1.bar(python_ver, file_1000[2:4] / file_1000[2], color=colors)
 ax1.bar_label(bars1)
 ax1.set_title("File 1000", fontsize=15)
-bars2 = ax2.bar(python_ver, file_10000[2:4]/file_10000[2], color=colors)
+bars2 = ax2.bar(python_ver, file_10000[2:4] / file_10000[2], color=colors)
 ax2.bar_label(bars2)
 ax2.set_title("File 10000", fontsize=15)
-bars3 = ax3.bar(python_ver, file_100000[2:4]/file_100000[2], color=colors)
+bars3 = ax3.bar(python_ver, file_100000[2:4] / file_100000[2], color=colors)
 ax3.bar_label(bars3)
 ax3.set_title("File 100000", fontsize=15)
 
-f.suptitle("Linux", fontsize=20, fontweight='bold')
+f.suptitle("Linux", fontsize=20, fontweight="bold")
 
 
-plt.savefig('linux.png')
-#plt.show()
+plt.savefig("linux.png")
+# plt.show()
 
-colors = ["seagreen","seagreen"]
+colors = ["seagreen", "seagreen"]
 
-f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize = (9,7))
-bars1 = ax1.bar(python_ver, file_1000[4:]/file_1000[4], color=colors)
+f, (ax1, ax2, ax3) = plt.subplots(1, 3, sharey=False, figsize=(9, 7))
+bars1 = ax1.bar(python_ver, file_1000[4:] / file_1000[4], color=colors)
 ax1.bar_label(bars1)
 ax1.set_title("File 1000", fontsize=15)
-bars2 = ax2.bar(python_ver, file_10000[4:]/file_10000[4], color=colors)
+bars2 = ax2.bar(python_ver, file_10000[4:] / file_10000[4], color=colors)
 ax2.bar_label(bars2)
 ax2.set_title("File 10000", fontsize=15)
-bars3 = ax3.bar(python_ver, file_100000[4:]/file_100000[4], color=colors)
+bars3 = ax3.bar(python_ver, file_100000[4:] / file_100000[4], color=colors)
 ax3.bar_label(bars3)
 ax3.set_title("File 100000", fontsize=15)
 
-f.suptitle("Windows 10", fontsize=20, fontweight='bold')
+f.suptitle("Windows 10", fontsize=20, fontweight="bold")
 
 
-plt.savefig('windows.png')
+plt.savefig("windows.png")
